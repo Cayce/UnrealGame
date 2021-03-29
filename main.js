@@ -868,6 +868,7 @@ var PACMAN = (function () {
     };
 
     function collided(user, ghost) {
+      return false;
         return (Math.sqrt(Math.pow(ghost.x - user.x, 2) +
                           Math.pow(ghost.y - user.y, 2))) < 10;
     };
